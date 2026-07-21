@@ -1,0 +1,8 @@
+{
+  "name": "Portal Curso de Sobrancelhas",
+  "description": "Apostila interativa e moderna para o curso profissional de design de sobrancelhas - Módulo 1.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
