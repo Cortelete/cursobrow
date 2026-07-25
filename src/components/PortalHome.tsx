@@ -21,6 +21,14 @@ const COURSE_DETAILS = {
   3: {
     desc: 'Domine a tintura de fios, técnicas de aplicação e obtenha resultados naturais.',
     img: 'capa_modulo3.png',
+  },
+  4: {
+    desc: 'Tratamento estético com argiloterapia, alta frequência e ativos cosméticos.',
+    img: 'capa_modulo4.png',
+  },
+  5: {
+    desc: 'Protocolo de reparação e estímulo com microagulhamento e blend cosmético.',
+    img: 'capa_modulo5.png',
   }
 };
 

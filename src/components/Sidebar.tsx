@@ -25,7 +25,7 @@ export function Sidebar({ sections, activeSection, onSelect, onBack, activeCours
 
       <div className="mb-6">
         <h1 className="font-medium text-xl text-gold-500 leading-tight">
-          {activeCourseId === 1 ? 'Design de Sobrancelhas' : activeCourseId === 2 ? 'Henna para Sobrancelhas' : 'Tintura para Sobrancelhas'}
+          {activeCourseId === 1 ? 'Design de Sobrancelhas' : activeCourseId === 2 ? 'Henna para Sobrancelhas' : activeCourseId === 3 ? 'Tintura para Sobrancelhas' : activeCourseId === 4 ? 'Protocolo de Crescimento' : 'Brow Repair'}
         </h1>
       </div>
       

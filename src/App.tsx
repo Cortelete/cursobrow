@@ -8,6 +8,8 @@ export const COURSES = [
   { id: 1, title: 'Design de Sobrancelhas', code: 'DESIGN24' },
   { id: 2, title: 'Henna para Sobrancelhas', code: 'HENNA24' },
   { id: 3, title: 'Tintura para Sobrancelhas', code: 'TINTURA24' },
+  { id: 4, title: 'Protocolo de Crescimento', code: 'CRESCIMENTO24' },
+  { id: 5, title: 'Brow Repair', code: 'REPAIR24' },
 ];
 
 const ALL_SECTIONS = [
@@ -32,7 +34,24 @@ const ALL_SECTIONS = [
   { id: 'mod3_capa', label: 'Tintura Início', module: 3 },
   { id: 'mod3_tintura_intro', label: 'O Que É Tintura', module: 3 },
   { id: 'mod3_tintura_aplicacao', label: 'Preparo e Aplicação', module: 3 },
-  { id: 'mod3_tintura_cuidados', label: 'Cuidados e Resumo', module: 3 }
+  { id: 'mod3_tintura_cuidados', label: 'Cuidados e Resumo', module: 3 },
+  { id: 'mod4_capa', label: 'Crescimento Início', module: 4 },
+  { id: 'mod4_intro', label: 'Introdução e Objetivos', module: 4 },
+  { id: 'mod4_etapas', label: 'Avaliação, Higienização e Design', module: 4 },
+  { id: 'mod4_argiloterapia', label: 'Argiloterapia', module: 4 },
+  { id: 'mod4_alta_frequencia', label: 'Alta Frequência', module: 4 },
+  { id: 'mod4_ativos', label: 'Ativos e Benefícios', module: 4 },
+  { id: 'mod4_materiais_contra', label: 'Materiais e Contraindicações', module: 4 },
+  { id: 'mod4_passoapasso', label: 'Passo a Passo', module: 4 },
+  { id: 'mod4_manutencao', label: 'Manutenção e Evolução', module: 4 },
+  { id: 'mod5_capa', label: 'Brow Repair Início', module: 5 },
+  { id: 'mod5_intro', label: 'O Que É?', module: 5 },
+  { id: 'mod5_microagulhamento', label: 'Microagulhamento', module: 5 },
+  { id: 'mod5_indicacoes_anamnese', label: 'Indicações e Anamnese', module: 5 },
+  { id: 'mod5_materiais_biosseguranca', label: 'Materiais e Biossegurança', module: 5 },
+  { id: 'mod5_blend_procedimento', label: 'Blend e Procedimento', module: 5 },
+  { id: 'mod5_cuidados_reacoes', label: 'Cuidados e Reações', module: 5 },
+  { id: 'mod5_conclusao', label: 'Conclusão e Resultados', module: 5 }
 ];
 
 export default function App() {
@@ -154,7 +173,7 @@ export default function App() {
                 className="flex items-center justify-between w-full text-left p-4 rounded-lg bg-[#111] border border-stone-800 transition-colors"
               >
                 <span className="text-stone-300 text-sm tracking-[0.1em] uppercase font-semibold">
-                  Módulo {activeCourseId} {activeCourseId === 2 ? '- Henna' : activeCourseId === 3 ? '- Tintura' : ''}
+                  Módulo {activeCourseId} {activeCourseId === 2 ? '- Henna' : activeCourseId === 3 ? '- Tintura' : activeCourseId === 4 ? '- Crescimento' : activeCourseId === 5 ? '- Brow Repair' : ''}
                 </span>
                 {expandedMobileModules.includes(activeCourseId) ? <ChevronDown className="w-5 h-5 text-gold-500" /> : <ChevronRight className="w-5 h-5 text-stone-500" />}
               </button>
