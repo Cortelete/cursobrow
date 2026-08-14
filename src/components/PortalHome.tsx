@@ -29,6 +29,10 @@ const COURSE_DETAILS = {
   5: {
     desc: 'Protocolo de reparação e estímulo com microagulhamento e blend cosmético.',
     img: 'capa_modulo5.png',
+  },
+  6: {
+    desc: 'Técnica de curvatura e definição dos cílios naturais para um olhar mais aberto e expressivo.',
+    img: 'capa_modulo6.png',
   }
 };
 

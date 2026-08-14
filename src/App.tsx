@@ -10,6 +10,7 @@ export const COURSES = [
   { id: 3, title: 'Tintura para Sobrancelhas', code: 'TINTURA24' },
   { id: 4, title: 'Protocolo de Crescimento', code: 'CRESCIMENTO24' },
   { id: 5, title: 'Brow Repair', code: 'REPAIR24' },
+  { id: 6, title: 'Lash Lifting', code: 'LASHLIFTING24' },
 ];
 
 const ALL_SECTIONS = [
@@ -51,7 +52,14 @@ const ALL_SECTIONS = [
   { id: 'mod5_materiais_biosseguranca', label: 'Materiais e Biossegurança', module: 5 },
   { id: 'mod5_blend_procedimento', label: 'Blend e Procedimento', module: 5 },
   { id: 'mod5_cuidados_reacoes', label: 'Cuidados e Reações', module: 5 },
-  { id: 'mod5_conclusao', label: 'Conclusão e Resultados', module: 5 }
+  { id: 'mod5_conclusao', label: 'Conclusão e Resultados', module: 5 },
+  { id: 'mod6_capa', label: 'Lash Lifting Início', module: 6 },
+  { id: 'mod6_intro', label: 'Introdução e O que é', module: 6 },
+  { id: 'mod6_fios_pele', label: 'Fios e Pele', module: 6 },
+  { id: 'mod6_materiais', label: 'Materiais e Precauções', module: 6 },
+  { id: 'mod6_passoapasso', label: 'Passo a Passo', module: 6 },
+  { id: 'mod6_finalizacao', label: 'Finalização e Pós-tratamento', module: 6 },
+  { id: 'mod6_erros_checklist', label: 'Erros Comuns e Checklist', module: 6 }
 ];
 
 export default function App() {
@@ -146,7 +154,9 @@ export default function App() {
           </button>
           <div>
             <h1 className="font-medium text-gold-500 leading-none truncate max-w-[200px]">{currentCourse?.title}</h1>
-            <p className="text-stone-500 text-[10px] tracking-widest uppercase mt-1">Módulo {activeCourseId}</p>
+            <p className="text-stone-500 text-[10px] tracking-widest uppercase mt-1">
+              {activeCourseId === 6 ? 'Conteúdo do Curso' : `Módulo ${activeCourseId}`}
+            </p>
           </div>
         </div>
         <button 
@@ -173,7 +183,7 @@ export default function App() {
                 className="flex items-center justify-between w-full text-left p-4 rounded-lg bg-[#111] border border-stone-800 transition-colors"
               >
                 <span className="text-stone-300 text-sm tracking-[0.1em] uppercase font-semibold">
-                  Módulo {activeCourseId} {activeCourseId === 2 ? '- Henna' : activeCourseId === 3 ? '- Tintura' : activeCourseId === 4 ? '- Crescimento' : activeCourseId === 5 ? '- Brow Repair' : ''}
+                  {activeCourseId === 6 ? 'Lash Lifting' : `Módulo ${activeCourseId} ${activeCourseId === 2 ? '- Henna' : activeCourseId === 3 ? '- Tintura' : activeCourseId === 4 ? '- Crescimento' : activeCourseId === 5 ? '- Brow Repair' : ''}`}
                 </span>
                 {expandedMobileModules.includes(activeCourseId) ? <ChevronDown className="w-5 h-5 text-gold-500" /> : <ChevronRight className="w-5 h-5 text-stone-500" />}
               </button>

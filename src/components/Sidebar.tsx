@@ -25,7 +25,7 @@ export function Sidebar({ sections, activeSection, onSelect, onBack, activeCours
 
       <div className="mb-6">
         <h1 className="font-medium text-xl text-gold-500 leading-tight">
-          {activeCourseId === 1 ? 'Design de Sobrancelhas' : activeCourseId === 2 ? 'Henna para Sobrancelhas' : activeCourseId === 3 ? 'Tintura para Sobrancelhas' : activeCourseId === 4 ? 'Protocolo de Crescimento' : 'Brow Repair'}
+          {activeCourseId === 1 ? 'Design de Sobrancelhas' : activeCourseId === 2 ? 'Henna para Sobrancelhas' : activeCourseId === 3 ? 'Tintura para Sobrancelhas' : activeCourseId === 4 ? 'Protocolo de Crescimento' : activeCourseId === 5 ? 'Brow Repair' : 'Lash Lifting'}
         </h1>
       </div>
       
@@ -36,7 +36,7 @@ export function Sidebar({ sections, activeSection, onSelect, onBack, activeCours
             className="flex items-center justify-between w-full text-left py-3 px-2 rounded-lg hover:bg-[#111] transition-colors"
           >
             <span className="text-stone-400 text-xs tracking-[0.1em] uppercase font-semibold">
-              Módulo {activeCourseId}
+              {activeCourseId === 6 ? 'Conteúdo do Curso' : `Módulo ${activeCourseId}`}
             </span>
             {isExpanded ? <ChevronDown className="w-4 h-4 text-stone-500" /> : <ChevronRight className="w-4 h-4 text-stone-500" />}
           </button>
