@@ -5,12 +5,12 @@ import { CourseContent } from './components/CourseContent';
 import { PortalHome } from './components/PortalHome';
 
 export const COURSES = [
-  { id: 1, title: 'Design de Sobrancelhas', code: 'DESIGN24' },
-  { id: 2, title: 'Henna para Sobrancelhas', code: 'HENNA24' },
-  { id: 3, title: 'Tintura para Sobrancelhas', code: 'TINTURA24' },
-  { id: 4, title: 'Protocolo de Crescimento', code: 'CRESCIMENTO24' },
-  { id: 5, title: 'Brow Repair', code: 'REPAIR24' },
-  { id: 6, title: 'Lash Lifting', code: 'LASHLIFTING24' },
+  { id: 1, title: 'Design de Sobrancelhas', code: 'XT7B-9M2K' },
+  { id: 2, title: 'Henna para Sobrancelhas', code: 'W4N8-P3L5' },
+  { id: 3, title: 'Tintura para Sobrancelhas', code: 'F2V6-C9R1' },
+  { id: 4, title: 'Protocolo de Crescimento', code: 'M8J3-Q5T7' },
+  { id: 5, title: 'Brow Repair', code: 'H5X9-D2W4' },
+  { id: 6, title: 'Lash Lifting', code: 'K3B7-N6Y8' },
 ];
 
 const ALL_SECTIONS = [
