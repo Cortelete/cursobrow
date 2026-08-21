@@ -31,6 +31,10 @@ const COURSE_DETAILS = {
     img: 'capa_modulo5.png',
   },
   6: {
+    desc: 'Técnica de modelagem química dos pelos para proporcionar alinhamento e volume.',
+    img: 'capa_brow.png',
+  },
+  7: {
     desc: 'Técnica de curvatura e definição dos cílios naturais para um olhar mais aberto e expressivo.',
     img: 'capa_modulo6.png',
   }

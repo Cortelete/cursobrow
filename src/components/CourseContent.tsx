@@ -5,6 +5,7 @@ import { Module3 } from './Module3';
 import { Module4 } from './Module4';
 import { Module5 } from './Module5';
 import { Module6 } from './Module6';
+import { Module7 } from './Module7';
 
 interface CourseContentProps {
   activeSection: string;
@@ -23,6 +24,7 @@ export function CourseContent({ activeSection, onNext, onPrev, isFirst, isLast }
       <Module4 activeSection={activeSection} />
       <Module5 activeSection={activeSection} />
       <Module6 activeSection={activeSection} />
+      <Module7 activeSection={activeSection} />
       
       {/* Pagination Controls */}
       <div className="fixed bottom-0 left-0 lg:left-64 right-0 p-4 bg-black/80 backdrop-blur-md border-t border-stone-900 flex justify-between items-center z-30">
